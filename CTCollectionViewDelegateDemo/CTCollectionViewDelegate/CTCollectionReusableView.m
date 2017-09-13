@@ -11,5 +11,7 @@
 @implementation CTCollectionReusableView
 
 - (void)updateWithCellData:(id)data{}
-
++ (CGSize)getSizeWithCellData:(id)data{
+    return CGSizeZero;
+}
 @end

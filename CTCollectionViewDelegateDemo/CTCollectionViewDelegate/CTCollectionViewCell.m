@@ -11,5 +11,7 @@
 @implementation CTCollectionViewCell
 
 - (void)updateWithCellData:(id)data atIndexPath:(NSIndexPath *)indexPath{}
-
++ (CGSize)getSizeWithCellData:(id)data{
+    return CGSizeZero;
+}
 @end

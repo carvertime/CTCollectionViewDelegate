@@ -13,5 +13,6 @@
 @property (nonatomic, weak) id delegate;
 
 - (void)updateWithCellData:(id)data;
++ (CGSize)getSizeWithCellData:(id)data;
 
 @end

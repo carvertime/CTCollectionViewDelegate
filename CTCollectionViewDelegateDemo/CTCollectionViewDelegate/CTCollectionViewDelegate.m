@@ -20,6 +20,10 @@
     return [self getSectionAtIndex:index].header;
 }
 
+- (CTCollectionViewItem *)getFooterAtIndex:(NSInteger)index{
+    return [self getSectionAtIndex:index].footer;
+}
+
 - (CTCollectionViewItem *)getItemAtIndexPath:(NSIndexPath *)indexPath{
     CTCollectionViewSection *section = [self getSectionAtIndex:indexPath.section];
     if (indexPath.item >= section.items.count) {
